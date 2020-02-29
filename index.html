@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!--Meta Information, Style Sheets, Scripts, Font Awesome, Font Family Starts from Here-->
+ <meta charset="utf-8" />
+ <title>Upwork-Talent on Demand Custom </title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <meta name="keywords" content="Upwork Navigation" />
+ <meta name="description" content="This is custom upwork navigation created by Md Choyon Mia" />
+ <meta name="author" content="Md Choyon Mia" />
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/slick.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/slick.css" />
+ <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+ <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+ <link rel="stylesheet" type="text/css" href="css/animate.css" />
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <script src="js/wow.min.js"></script>
+ <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16" />
+ <!--Meta Information, Style Sheets, Scripts, Font Awesome, Font Family Ends Here-->
+</head>
+<body>
+<!--==========================================================================================-->
+                            <!--Navbar Section Starts From Here-->
+<!--==========================================================================================-->
+<!--Navbar Section Starts From Here==========================================================-->
+<div class="topNav" id="main">
+ <div class="topNavContainer">
+  <nav class="navbar navbar-expand-lg"> 
+   <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" data-target="#mainNav">
+    <span class="navbar-toggler-icon">
+     <i class="fas fa-bars"></i>
+    </span>
+   </button>
+   <!--Logo Starts from Here-->
+   <a class="navbar-brand" href="#">
+    <img src="images/logo.JPG" alt="Upwork Logo" />
+   </a>
+   <!--Logo Ends Here=========================================================================-->
+   <!--Search Starts from Here================================================================-->
+   <form action="#" method="post" id="navSearch">
+    <input type="text" name="searc" placeholder="Find Professional & Agencies" />
+    <button type="submit">
+     <i class="fas fa-search"></i>
+    </button>
+    <a href="javascript:void(0)" id="ang">
+     <i class="fa fa-angle-down"></i>
+    </a>
+    <div class="customDa">
+     <a href="#">Jobs</a>
+     <a href="#">Professionals & Agencies</a>
+    </div>
+   </form>
+<!--Search Ends Here=========================================================================-->
+   <a href="javascript:void(0)" id="smallSearch" onclick="openAlt()">
+    <i class="fas fa-search"></i>
+   </a> 
+   <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ml-auto">
+    <!--DropDown Starts from Here=============================================================-->
+     <li class="nav-item dropd">
+      <a class="nav-link" href="#">HOW IT WORKS</a>
+      <div class="dropdMenu">
+       <h6>BUSINESS SIZE</h6>
+       <a class="dropdItem" href="#">10-100 Employees</a>
+       <a class="dropdItem" href="#">100-1000 Employees</a>
+       <a class="dropdItem" href="#">1000+ Employees</a>
+       <hr />
+       <h6>DEPARTMENT</h6>
+       <a class="dropdItem" href="#">Marketing</a>
+       <a class="dropdItem" href="#">Operations</a>
+       <a class="dropdItem" href="#">Engineering</a>
+      </div>
+      <!--DropDown Ends here==================================================================-->
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">LOG IN</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">SIGN UP</a>
+     </li>
+     <li class="nav-item jobButton">
+      <a class="nav-link" href="#">Post a Job</a>
+     </li>	 
+    </ul>
+   </div>
+  </nav>
+ </div>
+</div>
+<!--Animated Search Bar Starts from here======================================================-->
+<div class="animSearch2" id="sui3">
+ <input type="text" name="search" id="sui4" placeholder="Find Professional & Agencies" />
+ <a href="javascript:void(0)" class="closeButton" onclick="closeAlt()">&times;</a>
+ <a href="#" id="bng2">
+  <i class="fas fa-search"></i>
+ </a>
+ <a href="javascript:void(0)" id="ang3">
+  <i class="fa fa-angle-down"></i>
+ </a>
+ <div class="animDrop">
+  <a href="#">Professional & Agencies</a>
+  <a href="#">Jobs</a>
+ </div>
+</div>
+<!--Animated Search Bar Ends Here=============================================================-->
+<!--FullScreen Overlay Starts from Here=======================================================-->
+<div id="myNav" class="overlay container-fluid">
+<!--FullScreen Overlay Logo & Close Button Starts from Here===================================-->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a href="#" id="resImg">
+  <img src="images/logo.JPG" alt="Upwork Logo" />
+ </a>
+<!--FullScreen Overlay Logo & Close Button Ends Here==========================================--> 
+ <!--FullScreen Overlay Search Bar Starts From Here===========================================-->
+ <form action="#" method="post" id="navSearch2">
+  <input type="text" name="searc" placeholder="Find Professional & Agencies" />
+  <button type="submit">
+   <i class="fas fa-search"></i>
+  </button>
+  <a href="javascript:void(0)" id="angg">
+   <i class="fa fa-angle-down"></i>
+  </a>
+  <div class="animDrop2">
+   <a href="#">Professional & Agencies</a>
+   <a href="#">Jobs</a>
+  </div>
+ </form>
+ <!--FullScreen Overlay Search Bar Ends Here==================================================-->
+ <div class="row">
+  <div class="col-md-6 col-sm-12">
+   <a href="#">LOG IN</a>
+   <a href="#">SIGN UP</a>
+   <div class="dropd">
+      <a href="#" id="solu">SOLUTIONS
+       <i class="fas fa-angle-down"></i>
+      </a>
+      <div class="dropdMenu">
+       <h6>BUSINESS SIZE</h6>
+       <a class="dropdItem" href="#">10-100 Employees</a>
+       <a class="dropdItem" href="#">100-1000 Employees</a>
+       <a class="dropdItem" href="#">1000+ Employees</a>
+       <hr />
+       <h6>DEPARTMENT</h6>
+       <a class="dropdItem" href="#">Marketing</a>
+       <a class="dropdItem" href="#">Operations</a>
+       <a class="dropdItem" href="#">Engineering</a>
+      </div>
+     </div>
+   <a href="#">ABOUT US</a>
+   <a href="#">CONTACT US</a>
+   <a href="#">CAREERS</a>
+  </div>
+  <div class="col-md-6 col-sm-0 ddd">
+  <!--FullScreen Overlay DropDown Starts From Here===========================================-->
+   <div class="dropdMenu">
+    <h5>SOLUTIONS</h5>
+    <h6>BUSINESS SIZE</h6>
+    <a class="dropdItem" href="#">10-100 Employees</a>
+    <a class="dropdItem" href="#">100-1000 Employees</a>
+    <a class="dropdItem" href="#">1000+ Employees</a>
+    <h6 style="padding-top:5px;">DEPARTMENT</h6>
+    <a class="dropdItem" href="#">Marketing</a>
+    <a class="dropdItem" href="#">Operations</a>
+    <a class="dropdItem" href="#">Engineering</a>
+    <hr />
+   </div>
+  <!--FullScreen Overlay DropDown Ends Here===================================================-->
+  </div>
+ </div>
+ <div class="bfix"><a href="#">Post a Job</a></div>
+</div>
+<!--FullScreen Overlay Ends Here=============================================================-->
+<!--==========================================================================================-->
+                               <!--Navbar Section Ends Here-->
+<!--==========================================================================================-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

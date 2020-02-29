@@ -1,0 +1,1017 @@
+* {
+ box-sizing:border-box;
+}
+
+@font-face {
+ font-family:"Gotham SSm";
+ src:url("../fonts/GothamBook.ttf");
+}
+
+body {
+ margin:0px;
+ padding:0px;
+ font-family: "Gotham SSm", Helvetica, Arial, sans-serif;
+}
+
+/*=================================Navigation Styles Starts From Here===================*/
+.topNav {
+ padding:0px;
+ margin:0px;
+ background-color:#ffffff;
+ box-shadow:0px 0px 50px #f4f4f4;
+ position:fixed;
+ top:0px;
+ left:0px;
+ right:0px;
+ width:100%;
+ box-sizing:border-box;
+}
+
+#main {
+ transition:0.8s;
+}
+
+.topNavContainer {
+ padding:0px;
+ width:100%;
+}
+
+.topNav .navbar {
+ padding:0px 15px;
+ max-width:1170px;
+ margin:auto;
+}
+
+.topNav .navbar  .navbar-toggler {
+ border:none;
+ outline:none;
+ padding:0px;
+ margin:0px;
+}
+
+.topNav .navbar  .navbar-toggler .navbar-toggler-icon  i {
+ font-size:27px;
+ border:none;
+ outline:none;
+ color:#666;
+ padding-top:3px;
+}
+
+.topNav .navbar-brand {
+ margin:0px;
+ padding:0px 0px;
+ border:none;
+}
+
+.topNav .navbar-brand img {
+ width:110px;
+ height:35px;
+}
+
+.topNav .navbar #navSearch {
+ display:inline-block;
+ margin:0px 10px;
+ position:relative;
+}
+
+.topNav .navbar #navSearch .customDa {
+ position:absolute;
+ top:38px;
+ left:0px;
+ right:0px;
+ background-color:white;
+ border:1px solid #e0e0e0;
+ box-shadow:0px 0px 50px #f4f4f4;
+ display:none;
+ border-radius:2px;
+}
+
+.topNav .navbar #navSearch .customDa a {
+ text-decoration:none;
+ display:block;
+ font-size:12px;
+ font-weight:bold;
+ line-height:22px;
+ letter-spacing:1px;
+ color:#37a000;
+ padding:4px 10px;
+ transition:0.4s;
+ border:4px solid transparent;
+}
+
+.topNav .navbar #navSearch .customDa a:hover {
+ background-color:#f4f4f4;
+ color:#37a000;
+ border-left:4px solid #37a000;
+}
+
+.topNav .navbar #navSearch input {
+ font-size:12px;
+ line-height:22px;
+ color:#848484;
+ letter-spacing:1px;
+ font-weight:bold;
+ padding:7px 20px 7px 50px;
+ width:300px;
+ border:1px solid #e0e0e0;
+ outline:none;
+ border-radius:2px;
+ transition:0.3s;
+ background-color:transparent;
+}
+
+.topNav .navbar #navSearch input::placeholder {
+ font-size:12px;
+ line-height:22px;
+ color:#848484;
+ font-weight:bold;
+}
+
+.topNav .navbar #navSearch input:hover {
+ box-shadow:0px -1px 8px rgba(57,73,76,.85);
+}
+
+.topNav .navbar #navSearch input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.topNav .navbar #navSearch button {
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:14px;
+ color:#37a000;
+ font-weight:bold;
+ position:absolute;
+ left:2%;
+ top:50%;
+ transform:translate(-2%,-50%);
+}
+
+.topNav .navbar #navSearch #ang {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:18px;
+ color:#37a000;
+ position:absolute;
+ left:10%;
+ top:50%;
+ transform:translate(-10%,-50%);
+}
+
+
+.topNav .navbar-nav {
+ padding:0px 0px;
+ margin:0px;
+}
+
+.topNav .navbar-nav .nav-item {
+ padding:16px 18px;
+ margin:0px;
+ text-align:left;
+}
+
+.topNav .navbar-nav .nav-item .nav-link {
+ padding:8px 5px;
+ font-size:12px;
+ line-height:22px;
+ color:#666;
+ letter-spacing:1px;
+ font-weight:bold;
+ transition:0.4s;
+}
+
+.topNav .navbar-nav .nav-item .nav-link:hover {
+ color:#37a000;
+}
+
+.topNav .navbar-nav .jobButton {
+ padding:19px 0px 12px 20px;
+}
+
+.topNav .navbar-nav .jobButton .nav-link {
+ padding:4px 24px 4px;
+ font-size:12px;
+ line-height:22px;
+ color:#ffffff;
+ background-color:#37a000;
+ font-weight:bold;
+ letter-spacing:1px;
+ border-radius:2px;
+ user-select:none;
+ transition:0.4s;
+ box-shadow:0px 1px 6px rgba(57,73,76,.35);
+}
+
+.topNav .navbar-nav .jobButton .nav-link:hover {
+ box-shadow:0px 1px 12px rgba(57,73,76,.85);
+ color:#ffffff;
+}
+
+.topNav .navbar .dropd {
+ position:relative;
+}
+
+.topNav .navbar .dropd .dropdMenu {
+ position:absolute;
+ top:60px;
+ left:0px;
+ background-color:white;
+ box-shadow:0px 1px 6px rgba(57,73,76,.35);
+ min-width:250px;
+ z-index:9;
+ padding:10px 0px;
+ border-radius:2px;
+ display:none;
+}
+
+.topNav .navbar .dropd .dropdMenu h6 {
+ font-size:12px;
+ font-weight:bold;
+ color:black;
+ line-height:22px;
+ letter-spacing:1px;
+ padding:0px 20px;
+}
+
+.topNav .navbar .dropd .dropdMenu a {
+ text-decoration:none;
+ display:block;
+ text-align:left;
+ font-size:14px;
+ line-height:24px;
+ color:black;
+ padding:5px 20px;
+ transition:0.3s;
+}
+
+.topNav .navbar .dropd .dropdMenu a:hover {
+ text-decoration:none;
+ background-color:#f9f9f9;
+ color:#37a000;
+ border-left:4px solid #37a000;
+}
+
+.topNav .navbar .dropd .dropdMenu hr {
+ margin:9px 0px;
+ padding:0px;
+}
+
+.topNav .navbar .dropd .dropdMenu::after {
+  content: " ";
+  position: absolute;
+  top: -7%;
+  left: 13%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(57,73,76,.15) transparent;
+}
+
+.topNav .navbar .dropd:hover .dropdMenu {
+ display:block;
+}
+
+.topNav .navbar #smallSearch {
+ text-decoration:none;
+ display:inline-block;
+ font-size:12px;
+ line-height:22px;
+ font-weight:bold;
+ color:#666;
+ display:none;
+}
+/*===========================================================================================*/
+                           /*TopNav Responsive Styles Starts From Here*/
+/*============================================================================================*/
+/*Styles for less than or equal to viewport 1100px starts from here*/
+@media screen and (max-width:1100px) {
+ .topNav .navbar {
+ padding:0px 15px;
+ max-width:970px;
+ margin:auto;
+}
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+ .topNav .navbar {
+ padding:0px 15px;
+ max-width:970px;
+ margin:auto;
+}
+}
+
+@media screen and (max-width:910px) {
+ .topNav .navbar {
+ padding:0px 0px;
+}
+}
+/*====================Styles for less than or equal to viewport 1100px ends===================*/
+/*===============Styles for less than or equal to viewport 991px starts from here============*/
+@media screen and (max-width:991px) {
+ .topNav {
+  padding:0px 15px;
+ }
+ 
+ .topNav .topNavContainer {
+  padding:10px 0px;
+ }
+ 
+ .topNav .navbar {
+  text-align:center;
+ }
+ 
+ .topNav .navbar .navbar-nav {
+  display:none;
+ }
+ 
+ .topNav .navbar #navSearch {
+  display:none;
+ }
+ 
+ .topNav .navbar .dropd .dropdMenu {
+  display:none;
+ }
+ 
+ .topNav .navbar .dropd:hover .dropdMenu {
+  display:none;
+ }
+ 
+ .topNav .navbar #smallSearch {
+  display:block;
+  font-size:22px;
+  padding-top:3px;
+  transition:0.2s;
+ }
+ 
+ .topNav .navbar #smallSearch:hover{
+  color:#37a000;
+ }
+
+}
+/*===============Styles for less than or equal to viewport 991px Ends here============*/
+/*===============Styles for less than or equal to viewport 575px starts from here============*/
+@media screen and (max-width:575px) {
+ .topNav .navbar {
+  
+ }
+ 
+ .topNav .navbar .navbar-brand img {
+  width:110px;
+  height:35px;
+ }
+}
+/*===============Styles for less than or equal to viewport 575px Ends here============*/
+/*===========================================================================================*/
+                           /*TopNav Responsive Styles Ends Here*/
+/*============================================================================================*/
+/*======================================TopNav Styles Ends Here===============================*/
+
+/*===========================================================================================*/
+                           /*FullScreen Overlay Starts From Here*/
+/*============================================================================================*/
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.5s;
+  display:none;
+  margin:0px;
+  padding:0px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  font-size: 45px;
+  color:#37a000;
+}
+
+.overlay #resImg img{
+ width:110px;
+ height:35px;
+ display:block;
+ margin:10px auto;
+}
+
+.overlay #navSearch2 {
+ display:block;
+ position:relative;
+ text-align:center;
+ max-width:700px;
+ margin:20px auto;
+}
+
+.overlay #navSearch2 input {
+ font-size:12px;
+ line-height:22px;
+ color:#848484;
+ letter-spacing:1px;
+ font-weight:bold;
+ padding:7px 20px 7px 45px;
+ width:100%;
+ border:1px solid #e0e0e0;
+ outline:none;
+ border-radius:2px;
+ transition:0.3s;
+ background-color:transparent;
+}
+
+.overlay #navSearch2 input::placeholder {
+ font-size:12px;
+ line-height:22px;
+ color:#848484;
+ font-weight:bold;
+}
+
+.overlay #navSearch2 input:hover {
+ box-shadow:0px -1px 8px rgba(57,73,76,.85);
+}
+
+.overlay #navSearch2 input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.overlay #navSearch2 button {
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ font-weight:bold;
+ position:absolute;
+ left:1%;
+ top:50%;
+ transform:translate(-1%,-50%);
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:4%;
+ top:50%;
+ transform:translate(-4%,-50%);
+}
+
+.overlay #navSearch2 .animDrop2 {
+ min-width:100%;
+ background-color:white;
+ box-shadow:0px 0px 10px #e4e4e4;
+ position:absolute;
+ top:40px;
+ left:0px;
+ display:none;
+ z-index:9999;
+}
+
+.overlay #navSearch2 .animDrop2 a {
+ text-decoration:none;
+ display:block;
+ font-size:14px;
+ line-height:24px;
+ font-weight:bold;
+ padding:8px 20px;
+ color:#37a000;
+ transition:0.5s;
+ border-left:3px solid transparent;
+ letter-spacing:1px;
+ text-align:left;
+}
+
+.overlay #navSearch2 .animDrop2 a:hover {
+ text-decoration:none;
+ background-color:#f9f9f9;
+ color:#37a000;
+ border-left:3px solid #37a000;
+}
+
+.overlay .row {
+ max-width:700px;
+ margin:auto;
+ margin-top:30px;
+}
+
+.overlay .col-sm-12 a {
+ text-decoration:none;
+ display:block;
+ font-size:12px;
+ font-weight:bold;
+ line-height:22px;
+ padding:10px 0px;
+ color:black;
+ border-top:1px solid #e5e5e5;
+ border-bottom:1px solid #e5e5e5;
+ transition:0.4s;
+}
+
+.overlay .col-sm-12 .dropd {
+ position:relative;
+ display:none;
+}
+
+.overlay .col-sm-12 .dropd a i{
+ display:inline-block;
+ font-size:18px;
+ line-height:28px;
+ color:#37a000;
+ position:absolute;
+ right:10px;
+ padding:0px 5px;
+ transition:0.5s;
+}
+
+.overlay .col-sm-12 .dropd a:hover>i{
+ transform:rotate(-180deg);
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu {
+ position:absolute;
+ top:60px;
+ left:0px;
+ background-color:white;
+ box-shadow:0px 1px 6px rgba(57,73,76,.35);
+ min-width:250px;
+ z-index:9;
+ padding:10px 0px;
+ border-radius:2px;
+ display:none;
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu h6 {
+ font-size:12px;
+ font-weight:bold;
+ color:black;
+ line-height:22px;
+ letter-spacing:1px;
+ padding:0px 10px;
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu a {
+ text-decoration:none;
+ display:block;
+ text-align:left;
+ font-size:14px;
+ line-height:24px;
+ color:black;
+ padding:5px 20px;
+ transition:0.3s;
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu a:hover {
+ text-decoration:none;
+ background-color:#f9f9f9;
+ color:#37a000;
+ border-left:4px solid #37a000;
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu hr {
+ margin:9px 0px;
+ padding:0px;
+}
+
+.overlay .col-sm-12 .dropd .dropdMenu::after {
+  content: " ";
+  position: absolute;
+  top: -7%;
+  left: 13%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(57,73,76,.15) transparent;
+}
+
+.overlay .col-sm-12 .dropd:hover .dropdMenu {
+ display:block;
+}
+
+.overlay .col-sm-0 .dropdMenu h5 {
+  font-size:14px;
+  font-weight:bold;
+  color:black;
+  line-height:24px;
+  letter-spacing:1px;
+  padding:8px 10px 0px;
+  border-top:1px solid #e5e5e5;
+}
+
+.overlay .col-sm-0 .dropdMenu h6 {
+ font-size:12px;
+  font-weight:bold;
+  color:black;
+  line-height:22px;
+  letter-spacing:1px;
+  padding:0px 10px;
+  margin:0px;
+}
+
+.overlay .col-sm-0 .dropdMenu a {
+ text-decoration:none;
+ display:block;
+ font-size:12px;
+ line-height:22px;
+ letter-spacing:1px;
+ padding:0px 30px;
+ color:#666;
+}
+
+.overlay .col-sm-0 .dropdMenu a:hover {
+ text-decoration:none;
+ color:#37a000;
+}
+
+.overlay .col-sm-12 a:hover {
+ text-decoration:none;
+ color:#37a000;
+}
+
+.overlay .bfix {
+ padding:21px 20px;
+ position:absolute;
+ bottom:0px;
+ left:0px;
+ right:0px;
+ text-align:center;
+ background-color:#fafafa;
+ box-shadow:0px 1px 6px rgba(57,73,76,.85);
+}
+
+.overlay .bfix a {
+ text-decoration:none;
+ display:inline-block;
+ font-size:14px;
+ line-height:24px;
+ font-weight:bold;
+ background-color:#37a000;
+ color:white;
+ letter-spacing:0px;
+ padding:8px 32.30px;
+ border-radius:2px;
+}
+
+@media screen and (max-width:991px) {
+  .overlay {
+  display:block;
+ }
+}
+/*===========================================================================================*/
+                           /*FullScreen Overlay Responsive Styles Starts from Here*/
+/*============================================================================================*/
+/*===============Styles for less than or equal to viewport 767px starts from here============*/
+@media screen and (max-width:767px) {
+ .overlay .row {
+ max-width:462px;
+ margin:auto;
+}
+
+.overlay .col-sm-12 a {
+ padding:15.5px 0px;
+}
+
+.overlay .col-sm-12 .dropd {
+ display:block;
+}
+
+.overlay #navSearch2 {
+ max-width:432px;
+ margin:15px auto;
+}
+
+.overlay #navSearch2 input {
+ padding:8px 20px 8px 50px;
+}
+
+.overlay #navSearch2 button {
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:2%;
+ top:50%;
+ transform:translate(-2%,-50%);
+}
+
+.overlay #navSearch2 #angg {
+ font-size:12px;
+ line-height:22px;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+ 
+ .overlay .ddd {
+  display:none;
+ }
+}
+/*===============Styles for less than or equal to viewport 767px Ends here============*/
+/*===============Styles for less than or equal to viewport 700px starts from here============*/
+@media screen and (max-width:700px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+}
+
+/*===============Styles for less than or equal to viewport 700px Ends here============*/
+/*===============Styles for less than or equal to viewport 430px starts from here============*/
+@media screen and (max-width:650px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+ padding-right:10px;
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+}
+@media screen and (max-width:576px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+ padding-right:10px;
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+}
+
+@media screen and (max-width:500px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+ padding-right:10px;
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  font-size: 45px;
+  color:#37a000;
+}
+}
+
+@media screen and (max-width:410px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+ padding-right:10px;
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:8%;
+ top:50%;
+ transform:translate(-8%,-50%);
+}
+}
+/*===============Styles for less than or equal to viewport 430px Ends here============*/
+/*===============Styles for less than or equal to viewport 320px starts from here============*/
+@media screen and (max-width:320px) {
+.overlay #navSearch2 input {
+ padding-left:50px;
+ margin:0px 2px;
+ width:92%;
+}
+
+.overlay #navSearch2 button {
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ font-weight:bold;
+ position:absolute;
+ left:6%;
+ top:50%;
+ transform:translate(-6%,-50%);
+}
+
+.overlay #navSearch2 #angg {
+ text-decoration:none;
+ display:inline-block;
+ border:none;
+ outline:none;
+ background-color:transparent;
+ font-size:12px;
+ line-height:22px;
+ color:#37a000;
+ position:absolute;
+ left:14%;
+ top:50%;
+ transform:translate(-14%,-50%);
+}
+
+.overlay #navSearch2 .animDrop2 {
+ min-width:92%;
+ position:absolute;
+ top:40px;
+ left:12px;
+ }
+}
+/*===============Styles for less than or equal to viewport 320px Ends here============*/
+/*===========================================================================================*/
+                           /*FullScreen Overlay Responsive Styles Starts from Here*/
+/*============================================================================================*/
+/*==============================FullScreen Overlay Styles Ends Here===========================*/
+
+.animSearch2 {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.5s;
+  margin:0px 0px;
+  padding:0px;
+  display:none;
+  z-index:9999;
+}
+
+#sui3 {
+ height:100%;
+ width:0%;
+ position:fixed;
+ top:0px;
+ right:0px;
+}
+
+.animSearch2 input {
+ width:100%;
+ display:block;
+ padding:15px 19px 15px 45px;
+ border:none;
+ outline:none;
+ background-color:white;
+ font-size:12px;
+ font-weight:bold;
+ letter-spacing:0px;
+ line-height:22px;
+ color:#848484;
+ transition:0.5s;
+ border-bottom:2px solid #37a000;
+}
+
+.animSearch2 input::placeholder {
+ font-size:14px;
+ line-height:24px;
+ font-weight:bold;
+ color:#848484;
+ letter-spacing:1px;
+}
+
+.animSearch2 .closeButton {
+ text-decoration:none;
+ display:inline-block;
+  position: absolute;
+  top: -4px;
+  right: 20px;
+  font-size: 40px;
+  color:#37a000;
+}
+
+.animSearch2 #bng2 {
+ text-decoration:none;
+ display:inline-block;
+ font-size:18px;
+ line-height:28px;
+ color:#37a000;
+ position:absolute;
+ top:13px;
+ left:8px;
+}
+
+.animSearch2 #bng2:hover {
+ text-decoration:none;
+ color:#37a000;
+}
+
+.animSearch2 #ang3{
+ text-decoration:none;
+ display:inline-block;
+ font-size:16px;
+ line-height:26px;
+ color:#37a000;
+ position:absolute;
+ top:13px;
+ left:28px;
+}
+
+.animSearch2 #ang3:hover {
+ text-decoration:none;
+ color:#37a000;
+}
+
+.animSearch2 .animDrop {
+ min-width:100%;
+ background-color:white;
+ box-shadow:0px 0px 40px #e4e4e4;
+ position:absolute;
+ top:55px;
+ left:0px;
+ display:none;
+ z-index:9999;
+}
+
+.animSearch2 .animDrop a {
+ text-decoration:none;
+ display:block;
+ font-size:14px;
+ line-height:24px;
+ font-weight:bold;
+ padding:8px 20px;
+ color:#37a000;
+ transition:0.5s;
+ border-left:3px solid transparent;
+ letter-spacing:1px;
+}
+
+.animSearch2 .animDrop a:hover {
+ text-decoration:none;
+ background-color:#f9f9f9;
+ color:#37a000;
+ border-left:3px solid #37a000;
+}
+
+@media screen and (max-width:991px) {
+ .animSearch2 {
+  display:block;
+ }
+}
